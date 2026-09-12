@@ -1,0 +1,758 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Personal portfolio of [YOUR NAME] - First-Year B.Tech Computer Science student specializing in Artificial Intelligence and Machine Learning.">
+  <meta name="author" content="[YOUR NAME]">
+  <title>[YOUR NAME] | B.Tech CSE (AI/ML) Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Navigation Header -->
+  <header class="header" id="navbar">
+    <div class="container header-container">
+      <a href="#home" class="logo" aria-label="Portfolio Home">
+        <span class="logo-badge">[YN]</span>
+        <span class="logo-text">[YOUR NAME]</span>
+      </a>
+
+      <button class="menu-toggle" id="menuToggle" aria-label="Toggle Navigation Menu" aria-expanded="false" aria-controls="navMenu">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </button>
+
+      <nav class="nav" id="navMenu">
+        <ul class="nav-list">
+          <li><a href="#home" class="nav-link active">Home</a></li>
+          <li><a href="#about" class="nav-link">About</a></li>
+          <li><a href="#skills" class="nav-link">Skills</a></li>
+          <li><a href="#projects" class="nav-link">Projects</a></li>
+          <li><a href="#journey" class="nav-link">Journey</a></li>
+          <li><a href="#education" class="nav-link">Education</a></li>
+          <li><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- Section 1: Home (Hero) -->
+    <section class="section hero-section" id="home">
+      <div class="container hero-container">
+        <div class="hero-content">
+          <div class="hero-badge">
+            <span class="status-dot"></span>
+            <span>First-Year Computer Science Student</span>
+          </div>
+          <h1 class="hero-name">[YOUR NAME]</h1>
+          <h2 class="hero-title">B.Tech CSE | AI/ML Student</h2>
+          <p class="hero-description">
+            Passionate first-year Computer Science Engineering student specializing in Artificial Intelligence and Machine Learning. Focused on building strong foundations in data structures, algorithms, and computational mathematics to create intelligent, real-world solutions.
+          </p>
+          <div class="hero-actions">
+            <a href="#projects" class="btn btn-primary" id="hero-view-projects">
+              View Projects
+              <svg class="btn-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <line x1="5" y1="12" x2="19" y2="12"></line>
+                <polyline points="12 5 19 12 12 19"></polyline>
+              </svg>
+            </a>
+            <a href="#contact" class="btn btn-secondary" id="hero-contact-me">
+              Contact Me
+              <svg class="btn-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                <polyline points="22,6 12,13 2,6"></polyline>
+              </svg>
+            </a>
+          </div>
+        </div>
+
+        <div class="hero-highlights">
+          <div class="highlight-card">
+            <div class="highlight-icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect>
+                <line x1="8" y1="21" x2="16" y2="21"></line>
+                <line x1="12" y1="17" x2="12" y2="17"></line>
+                <line x1="12" y1="17" x2="12" y2="21"></line>
+              </svg>
+            </div>
+            <div class="highlight-info">
+              <span class="highlight-label">Degree Track</span>
+              <strong class="highlight-value">B.Tech CSE (AI/ML)</strong>
+            </div>
+          </div>
+
+          <div class="highlight-card">
+            <div class="highlight-icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <polygon points="12 2 2 7 12 12 22 7 12 2"></polygon>
+                <polyline points="2 17 12 22 22 17"></polyline>
+                <polyline points="2 12 12 17 22 12"></polyline>
+              </svg>
+            </div>
+            <div class="highlight-info">
+              <span class="highlight-label">Academic Standing</span>
+              <strong class="highlight-value">First Year Undergraduate</strong>
+            </div>
+          </div>
+
+          <div class="highlight-card">
+            <div class="highlight-icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <circle cx="12" cy="12" r="10"></circle>
+                <line x1="2" y1="12" x2="22" y2="12"></line>
+                <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path>
+              </svg>
+            </div>
+            <div class="highlight-info">
+              <span class="highlight-label">Primary Interest</span>
+              <strong class="highlight-value">AI, ML &amp; Algorithms</strong>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section 2: About -->
+    <section class="section" id="about">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">About Me</span>
+          <h2 class="section-title">Building Solid Engineering Foundations</h2>
+          <p class="section-subtitle">
+            A dedicated first-year undergraduate striving to combine programming rigour with cutting-edge machine intelligence.
+          </p>
+        </div>
+
+        <div class="about-grid">
+          <div class="about-narrative">
+            <h3 class="about-heading">Hello! I am a First-Year CSE Student</h3>
+            <p>
+              I am currently pursuing my Bachelor of Technology in Computer Science and Engineering with a focused specialization in Artificial Intelligence and Machine Learning.
+            </p>
+            <p>
+              My academic journey is centered on building robust fundamental skills. I spend my time learning modern programming techniques, analyzing data structures and algorithms (DSA), understanding the underlying mathematics of machine intelligence, and implementing clean code solutions.
+            </p>
+            <p>
+              I believe that becoming an impactful AI engineer starts with mastering the basics—writing efficient algorithms in C++, automating workflows with Python, and understanding how data translates into actionable decisions.
+            </p>
+          </div>
+
+          <div class="about-pillars">
+            <div class="pillar-card">
+              <div class="pillar-header">
+                <span class="pillar-number">01</span>
+                <h4>Algorithmic Problem Solving</h4>
+              </div>
+              <p>Strengthening algorithmic thinking and problem-solving through disciplined DSA practice in C++ and Python.</p>
+            </div>
+
+            <div class="pillar-card">
+              <div class="pillar-header">
+                <span class="pillar-number">02</span>
+                <h4>AI &amp; Machine Learning Focus</h4>
+              </div>
+              <p>Studying foundational math, statistical inference, and machine learning models to build intelligent software.</p>
+            </div>
+
+            <div class="pillar-card">
+              <div class="pillar-header">
+                <span class="pillar-number">03</span>
+                <h4>Practical Engineering</h4>
+              </div>
+              <p>Applying classroom concepts into hands-on student projects, Git version control, and web interfaces.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section 3: Skills -->
+    <section class="section" id="skills">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Technical Competencies</span>
+          <h2 class="section-title">Skills &amp; Technologies</h2>
+          <p class="section-subtitle">
+            Core technologies, programming languages, and computational domains I am actively practicing.
+          </p>
+        </div>
+
+        <div class="skills-grid">
+          <!-- Skill 1: Python -->
+          <div class="skill-card">
+            <div class="skill-icon-wrapper">
+              <svg class="skill-icon" viewBox="0 0 24 24" width="32" height="32" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M12 2H8a4 4 0 0 0-4 4v3a3 3 0 0 0 3 3h5v2H6a4 4 0 0 0-4 4v2a2 2 0 0 0 2 2h4a4 4 0 0 0 4-4v-3a3 3 0 0 0-3-3H4"></path>
+                <circle cx="8" cy="6" r="1" fill="currentColor"></circle>
+                <circle cx="16" cy="18" r="1" fill="currentColor"></circle>
+              </svg>
+            </div>
+            <div class="skill-card-content">
+              <div class="skill-title-row">
+                <h3 class="skill-name">Python</h3>
+                <span class="skill-badge">Core</span>
+              </div>
+              <p class="skill-desc">Scripting, logic development, data manipulation, and building entry-level machine learning models.</p>
+            </div>
+          </div>
+
+          <!-- Skill 2: C++ -->
+          <div class="skill-card">
+            <div class="skill-icon-wrapper">
+              <svg class="skill-icon" viewBox="0 0 24 24" width="32" height="32" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <polyline points="16 18 22 12 16 6"></polyline>
+                <polyline points="8 6 2 12 8 18"></polyline>
+                <line x1="12" y1="9" x2="12" y2="15"></line>
+                <line x1="9" y1="12" x2="15" y2="12"></line>
+              </svg>
+            </div>
+            <div class="skill-card-content">
+              <div class="skill-title-row">
+                <h3 class="skill-name">C++</h3>
+                <span class="skill-badge">Core</span>
+              </div>
+              <p class="skill-desc">Object-oriented programming, low-level memory management, and high-performance competitive coding.</p>
+            </div>
+          </div>
+
+          <!-- Skill 3: Data Structures & Algorithms -->
+          <div class="skill-card">
+            <div class="skill-icon-wrapper">
+              <svg class="skill-icon" viewBox="0 0 24 24" width="32" height="32" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <rect x="3" y="3" width="7" height="7"></rect>
+                <rect x="14" y="3" width="7" height="7"></rect>
+                <rect x="14" y="14" width="7" height="7"></rect>
+                <rect x="3" y="14" width="7" height="7"></rect>
+              </svg>
+            </div>
+            <div class="skill-card-content">
+              <div class="skill-title-row">
+                <h3 class="skill-name">Data Structures &amp; Algorithms</h3>
+                <span class="skill-badge">Active</span>
+              </div>
+              <p class="skill-desc">Arrays, linked lists, stacks, queues, recursion, searching, sorting, and time/space complexity analysis.</p>
+            </div>
+          </div>
+
+          <!-- Skill 4: Artificial Intelligence -->
+          <div class="skill-card">
+            <div class="skill-icon-wrapper">
+              <svg class="skill-icon" viewBox="0 0 24 24" width="32" height="32" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M12 2a4 4 0 0 1 4 4v1a4 4 0 0 1-4 4 4 4 0 0 1-4-4V6a4 4 0 0 1 4-4z"></path>
+                <path d="M6 21v-2a4 4 0 0 1 4-4h4a4 4 0 0 1 4 4v2"></path>
+                <circle cx="12" cy="7" r="1"></circle>
+              </svg>
+            </div>
+            <div class="skill-card-content">
+              <div class="skill-title-row">
+                <h3 class="skill-name">Artificial Intelligence</h3>
+                <span class="skill-badge">Specialization</span>
+              </div>
+              <p class="skill-desc">Foundations of intelligent agents, problem formulation, search algorithms, and computational logic.</p>
+            </div>
+          </div>
+
+          <!-- Skill 5: Machine Learning -->
+          <div class="skill-card">
+            <div class="skill-icon-wrapper">
+              <svg class="skill-icon" viewBox="0 0 24 24" width="32" height="32" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <circle cx="18" cy="5" r="3"></circle>
+                <circle cx="6" cy="12" r="3"></circle>
+                <circle cx="18" cy="19" r="3"></circle>
+                <line x1="8.59" y1="13.51" x2="15.42" y2="17.49"></line>
+                <line x1="15.41" y1="6.51" x2="8.59" y2="10.49"></line>
+              </svg>
+            </div>
+            <div class="skill-card-content">
+              <div class="skill-title-row">
+                <h3 class="skill-name">Machine Learning</h3>
+                <span class="skill-badge">Specialization</span>
+              </div>
+              <p class="skill-desc">Supervised and unsupervised learning basics, data pre-processing, linear regression, and classification.</p>
+            </div>
+          </div>
+
+          <!-- Skill 6: HTML -->
+          <div class="skill-card">
+            <div class="skill-icon-wrapper">
+              <svg class="skill-icon" viewBox="0 0 24 24" width="32" height="32" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <polygon points="12 2 2 5 4 19 12 22 20 19 22 5 12 2"></polygon>
+                <path d="M12 6v12"></path>
+              </svg>
+            </div>
+            <div class="skill-card-content">
+              <div class="skill-title-row">
+                <h3 class="skill-name">HTML</h3>
+                <span class="skill-badge">Proficient</span>
+              </div>
+              <p class="skill-desc">Modern semantic HTML5 structuring, accessible markup, document hierarchy, and SEO best practices.</p>
+            </div>
+          </div>
+
+          <!-- Skill 7: CSS -->
+          <div class="skill-card">
+            <div class="skill-icon-wrapper">
+              <svg class="skill-icon" viewBox="0 0 24 24" width="32" height="32" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M4 3h16l-2 15-6 3-6-3L4 3z"></path>
+                <path d="M7.5 7h9M7.5 11h8M8 15h8"></path>
+              </svg>
+            </div>
+            <div class="skill-card-content">
+              <div class="skill-title-row">
+                <h3 class="skill-name">CSS</h3>
+                <span class="skill-badge">Proficient</span>
+              </div>
+              <p class="skill-desc">Responsive layouts with Flexbox and CSS Grid, custom properties, animations, and clean dark themes.</p>
+            </div>
+          </div>
+
+          <!-- Skill 8: Git & GitHub -->
+          <div class="skill-card">
+            <div class="skill-icon-wrapper">
+              <svg class="skill-icon" viewBox="0 0 24 24" width="32" height="32" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <circle cx="18" cy="18" r="3"></circle>
+                <circle cx="6" cy="6" r="3"></circle>
+                <path d="M13 6h3a2 2 0 0 1 2 2v7"></path>
+                <line x1="6" y1="9" x2="6" y2="21"></line>
+              </svg>
+            </div>
+            <div class="skill-card-content">
+              <div class="skill-title-row">
+                <h3 class="skill-name">Git &amp; GitHub</h3>
+                <span class="skill-badge">Core Tool</span>
+              </div>
+              <p class="skill-desc">Distributed version control, repository maintenance, branching, commits, and collaborative coding.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section 4: Projects -->
+    <section class="section" id="projects">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Featured Work</span>
+          <h2 class="section-title">Academic &amp; Learning Projects</h2>
+          <p class="section-subtitle">
+            Practical projects developed during coursework and self-guided learning.
+          </p>
+        </div>
+
+        <div class="projects-grid">
+          <!-- Project 1 -->
+          <article class="project-card">
+            <div class="project-header">
+              <span class="project-type">AI / NLP Concept</span>
+              <h3 class="project-title">AI Study Assistant</h3>
+            </div>
+            <p class="project-description">
+              An intelligent learning tool designed to assist college students by automatically summarizing lecture notes, parsing key concepts into flashcards, and generating quiz prompts based on syllabus topics.
+            </p>
+            <div class="project-tech">
+              <span class="tech-tag">Python</span>
+              <span class="tech-tag">Text Processing</span>
+              <span class="tech-tag">Algorithms</span>
+              <span class="tech-tag">CLI</span>
+            </div>
+            <div class="project-footer">
+              <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="btn-github" aria-label="View AI Study Assistant source code on GitHub">
+                <svg class="github-icon" viewBox="0 0 24 24" width="18" height="18" fill="currentColor">
+                  <path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/>
+                </svg>
+                <span>View on GitHub</span>
+              </a>
+            </div>
+          </article>
+
+          <!-- Project 2 -->
+          <article class="project-card">
+            <div class="project-header">
+              <span class="project-type">Web Application</span>
+              <h3 class="project-title">Student Productivity Dashboard</h3>
+            </div>
+            <p class="project-description">
+              A distraction-free web dashboard built to track daily coding study streaks, manage assignment deadlines, organize course roadmaps, and maintain daily academic milestones with local data persistence.
+            </p>
+            <div class="project-tech">
+              <span class="tech-tag">HTML5</span>
+              <span class="tech-tag">CSS3</span>
+              <span class="tech-tag">Vanilla JavaScript</span>
+              <span class="tech-tag">LocalStorage</span>
+            </div>
+            <div class="project-footer">
+              <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="btn-github" aria-label="View Student Productivity Dashboard source code on GitHub">
+                <svg class="github-icon" viewBox="0 0 24 24" width="18" height="18" fill="currentColor">
+                  <path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/>
+                </svg>
+                <span>View on GitHub</span>
+              </a>
+            </div>
+          </article>
+
+          <!-- Project 3 -->
+          <article class="project-card">
+            <div class="project-header">
+              <span class="project-type">Algorithm Repository</span>
+              <h3 class="project-title">Python Learning Projects</h3>
+            </div>
+            <p class="project-description">
+              A documented repository of modular Python programs exploring foundational concepts: classical sorting/searching algorithms, recursive puzzles, math computations, and automation scripts.
+            </p>
+            <div class="project-tech">
+              <span class="tech-tag">Python</span>
+              <span class="tech-tag">Algorithms</span>
+              <span class="tech-tag">Data Structures</span>
+              <span class="tech-tag">Git</span>
+            </div>
+            <div class="project-footer">
+              <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="btn-github" aria-label="View Python Learning Projects on GitHub">
+                <svg class="github-icon" viewBox="0 0 24 24" width="18" height="18" fill="currentColor">
+                  <path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/>
+                </svg>
+                <span>View on GitHub</span>
+              </a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section 5: Learning Journey -->
+    <section class="section" id="journey">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Roadmap</span>
+          <h2 class="section-title">Learning Journey</h2>
+          <p class="section-subtitle">
+            A structured, step-by-step roadmap guiding my progression from core engineering fundamentals to advanced artificial intelligence.
+          </p>
+        </div>
+
+        <div class="timeline">
+          <!-- Step 1 -->
+          <div class="timeline-item completed">
+            <div class="timeline-marker">
+              <span class="marker-dot"></span>
+            </div>
+            <div class="timeline-content">
+              <div class="timeline-badge-row">
+                <span class="step-num">Step 1</span>
+                <span class="timeline-status status-done">Completed</span>
+              </div>
+              <h3 class="timeline-title">Programming Fundamentals</h3>
+              <p class="timeline-desc">
+                Core computational concepts: variable types, conditionals, loops, functions, memory layout, and structured problem decomposition.
+              </p>
+            </div>
+          </div>
+
+          <!-- Step 2 -->
+          <div class="timeline-item active">
+            <div class="timeline-marker">
+              <span class="marker-dot"></span>
+            </div>
+            <div class="timeline-content">
+              <div class="timeline-badge-row">
+                <span class="step-num">Step 2</span>
+                <span class="timeline-status status-active">Currently Learning</span>
+              </div>
+              <h3 class="timeline-title">Python &amp; C++</h3>
+              <p class="timeline-desc">
+                Object-oriented design, standard libraries, pointers, memory allocation, and writing idiomatic code in both languages.
+              </p>
+            </div>
+          </div>
+
+          <!-- Step 3 -->
+          <div class="timeline-item active">
+            <div class="timeline-marker">
+              <span class="marker-dot"></span>
+            </div>
+            <div class="timeline-content">
+              <div class="timeline-badge-row">
+                <span class="step-num">Step 3</span>
+                <span class="timeline-status status-active">Currently Learning</span>
+              </div>
+              <h3 class="timeline-title">Data Structures &amp; Algorithms (DSA)</h3>
+              <p class="timeline-desc">
+                Arrays, linked lists, stacks, queues, binary trees, graph traversals, and algorithmic complexity (Big-O analysis).
+              </p>
+            </div>
+          </div>
+
+          <!-- Step 4 -->
+          <div class="timeline-item">
+            <div class="timeline-marker">
+              <span class="marker-dot"></span>
+            </div>
+            <div class="timeline-content">
+              <div class="timeline-badge-row">
+                <span class="step-num">Step 4</span>
+                <span class="timeline-status status-upcoming">Upcoming</span>
+              </div>
+              <h3 class="timeline-title">Mathematics for AI/ML</h3>
+              <p class="timeline-desc">
+                Essential linear algebra (vectors, matrices, eigenvalues), multivariate calculus (gradients, optimization), and probability &amp; statistics.
+              </p>
+            </div>
+          </div>
+
+          <!-- Step 5 -->
+          <div class="timeline-item">
+            <div class="timeline-marker">
+              <span class="marker-dot"></span>
+            </div>
+            <div class="timeline-content">
+              <div class="timeline-badge-row">
+                <span class="step-num">Step 5</span>
+                <span class="timeline-status status-upcoming">Upcoming</span>
+              </div>
+              <h3 class="timeline-title">Machine Learning</h3>
+              <p class="timeline-desc">
+                Supervised &amp; unsupervised learning paradigms, regression, classification trees, clustering, and feature engineering.
+              </p>
+            </div>
+          </div>
+
+          <!-- Step 6 -->
+          <div class="timeline-item">
+            <div class="timeline-marker">
+              <span class="marker-dot"></span>
+            </div>
+            <div class="timeline-content">
+              <div class="timeline-badge-row">
+                <span class="step-num">Step 6</span>
+                <span class="timeline-status status-upcoming">Upcoming</span>
+              </div>
+              <h3 class="timeline-title">Deep Learning</h3>
+              <p class="timeline-desc">
+                Artificial neural networks, backpropagation mechanics, activation functions, convolutional networks, and deep learning frameworks.
+              </p>
+            </div>
+          </div>
+
+          <!-- Step 7 -->
+          <div class="timeline-item">
+            <div class="timeline-marker">
+              <span class="marker-dot"></span>
+            </div>
+            <div class="timeline-content">
+              <div class="timeline-badge-row">
+                <span class="step-num">Step 7</span>
+                <span class="timeline-status status-upcoming">Upcoming</span>
+              </div>
+              <h3 class="timeline-title">Generative AI</h3>
+              <p class="timeline-desc">
+                Transformer architectures, attention mechanisms, Large Language Models (LLMs), prompt engineering, and intelligent agent systems.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section 6: Education -->
+    <section class="section" id="education">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Academics</span>
+          <h2 class="section-title">Education &amp; Credentials</h2>
+          <p class="section-subtitle">
+            Formal undergraduate academic background and current institutional details.
+          </p>
+        </div>
+
+        <div class="education-card">
+          <div class="education-header">
+            <div class="education-icon">
+              <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M22 10v6M2 10l10-5 10 5-10 5z"></path>
+                <path d="M6 12v5c3 3 9 3 12 0v-5"></path>
+              </svg>
+            </div>
+            <div class="education-meta">
+              <span class="education-year">First Year (2024 - Present)</span>
+              <h3 class="education-degree">Bachelor of Technology (B.Tech)</h3>
+              <h4 class="education-major">Computer Science &amp; Engineering</h4>
+            </div>
+          </div>
+
+          <div class="education-body">
+            <div class="education-detail-item">
+              <span class="detail-label">Specialization:</span>
+              <span class="detail-value highlight-accent">Artificial Intelligence &amp; Machine Learning (AI/ML)</span>
+            </div>
+            <div class="education-detail-item">
+              <span class="detail-label">University:</span>
+              <span class="detail-value">[YOUR UNIVERSITY]</span>
+            </div>
+            <div class="education-detail-item">
+              <span class="detail-label">Academic Year:</span>
+              <span class="detail-value">First Year Undergraduate</span>
+            </div>
+          </div>
+
+          <div class="education-coursework">
+            <h5 class="coursework-title">Relevant Current &amp; Foundational Coursework:</h5>
+            <div class="coursework-tags">
+              <span class="course-tag">Problem Solving &amp; Programming</span>
+              <span class="course-tag">Discrete Mathematics</span>
+              <span class="course-tag">Linear Algebra &amp; Calculus</span>
+              <span class="course-tag">Digital Logic Design</span>
+              <span class="course-tag">Engineering Physics</span>
+              <span class="course-tag">Python Computing Lab</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section 7: Contact -->
+    <section class="section" id="contact">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Get In Touch</span>
+          <h2 class="section-title">Contact Me</h2>
+          <p class="section-subtitle">
+            Interested in discussing projects, technology, or opportunities? Feel free to reach out directly or send a message.
+          </p>
+        </div>
+
+        <div class="contact-grid">
+          <!-- Left Column: Contact Links & Details -->
+          <div class="contact-info-panel">
+            <h3 class="contact-panel-title">Let's Connect</h3>
+            <p class="contact-panel-desc">
+              I am always excited to connect with fellow students, engineers, and mentors in AI and computer science.
+            </p>
+
+            <div class="contact-links-list">
+              <!-- Email Item -->
+              <a href="mailto:[YOUR EMAIL]" class="contact-link-item" id="contact-email-link">
+                <div class="contact-link-icon">
+                  <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                    <polyline points="22,6 12,13 2,6"></polyline>
+                  </svg>
+                </div>
+                <div class="contact-link-text">
+                  <span class="link-label">Email</span>
+                  <span class="link-value">[YOUR EMAIL]</span>
+                </div>
+              </a>
+
+              <!-- GitHub Item -->
+              <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="contact-link-item" id="contact-github-link">
+                <div class="contact-link-icon">
+                  <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/>
+                  </svg>
+                </div>
+                <div class="contact-link-text">
+                  <span class="link-label">GitHub</span>
+                  <span class="link-value">[GITHUB LINK]</span>
+                </div>
+              </a>
+
+              <!-- LinkedIn Item -->
+              <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" class="contact-link-item" id="contact-linkedin-link">
+                <div class="contact-link-icon">
+                  <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/>
+                  </svg>
+                </div>
+                <div class="contact-link-text">
+                  <span class="link-label">LinkedIn</span>
+                  <span class="link-value">[LINKEDIN LINK]</span>
+                </div>
+              </a>
+            </div>
+          </div>
+
+          <!-- Right Column: Interactive Contact Form -->
+          <div class="contact-form-panel">
+            <h3 class="contact-panel-title">Send a Message</h3>
+            
+            <form id="contactForm" class="contact-form" novalidate>
+              <div class="form-group">
+                <label for="contact-name" class="form-label">Your Name <span class="required">*</span></label>
+                <input 
+                  type="text" 
+                  id="contact-name" 
+                  name="name" 
+                  class="form-input" 
+                  placeholder="Enter your full name" 
+                  required
+                >
+                <span class="field-error" id="name-error">Please enter your name.</span>
+              </div>
+
+              <div class="form-group">
+                <label for="contact-email" class="form-label">Your Email <span class="required">*</span></label>
+                <input 
+                  type="email" 
+                  id="contact-email" 
+                  name="email" 
+                  class="form-input" 
+                  placeholder="name@example.com" 
+                  required
+                >
+                <span class="field-error" id="email-error">Please enter a valid email address.</span>
+              </div>
+
+              <div class="form-group">
+                <label for="contact-message" class="form-label">Message <span class="required">*</span></label>
+                <textarea 
+                  id="contact-message" 
+                  name="message" 
+                  class="form-textarea" 
+                  rows="4" 
+                  placeholder="What would you like to say or ask?" 
+                  required
+                ></textarea>
+                <span class="field-error" id="message-error">Please write a message.</span>
+              </div>
+
+              <button type="submit" id="contact-submit-btn" class="btn btn-primary btn-block">
+                <span>Send Message</span>
+                <svg class="btn-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <line x1="22" y1="2" x2="11" y2="13"></line>
+                  <polygon points="22 2 15 22 11 13 2 9 22 2"></polygon>
+                </svg>
+              </button>
+
+              <!-- In-place confirmation status banner (displays without refreshing) -->
+              <div id="form-status" class="form-status" role="alert" aria-live="polite"></div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container footer-container">
+      <div class="footer-left">
+        <p class="footer-brand">[YOUR NAME] &bull; B.Tech CSE (AI/ML)</p>
+        <p class="footer-copyright">&copy; 2025 [YOUR NAME]. Built with pure HTML, CSS &amp; Vanilla JavaScript.</p>
+      </div>
+      <div class="footer-right">
+        <a href="#home" class="back-to-top" id="backToTop" aria-label="Back to top of page">
+          <span>Back to top</span>
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <polyline points="18 15 12 9 6 15"></polyline>
+          </svg>
+        </a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js" defer></script>
+</body>
+</html>
