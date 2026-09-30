@@ -3,18 +3,27 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Personal portfolio of [YOUR NAME] - First-Year B.Tech Computer Science student specializing in Artificial Intelligence and Machine Learning.">
-  <meta name="author" content="[YOUR NAME]">
-  <title>[YOUR NAME] | B.Tech CSE (AI/ML) Portfolio</title>
+  <meta name="description" content="Personal portfolio of Aryan Bhati - First-Year B.Tech Computer Science student specializing in Artificial Intelligence and Machine Learning.">
+  <meta name="author" content="Aryan Bhati">
+  <title>Aryan Bhati | B.Tech CSE (AI/ML) Portfolio</title>
+  
+  <!-- Modern Google Fonts: Outfit (Headings & Badges), Plus Jakarta Sans (Body), Fira Code (Terminal & Code) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500;600&family=Outfit:wght@400;500;600;700;800;900&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+  
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
+  <!-- Ambient Cursor Spotlight Follower -->
+  <div class="ambient-spotlight" id="ambientSpotlight" aria-hidden="true"></div>
+
   <!-- Navigation Header -->
   <header class="header" id="navbar">
     <div class="container header-container">
       <a href="#home" class="logo" aria-label="Portfolio Home">
-        <span class="logo-badge">[YN]</span>
-        <span class="logo-text">[YOUR NAME]</span>
+        <span class="logo-badge">AB</span>
+        <span class="logo-text">Aryan Bhati</span>
       </a>
 
       <button class="menu-toggle" id="menuToggle" aria-label="Toggle Navigation Menu" aria-expanded="false" aria-controls="navMenu">
@@ -38,85 +47,204 @@
   </header>
 
   <main>
-    <!-- Section 1: Home (Hero) -->
+    <!-- Section 1: Home (Hero) with Neural Particle Canvas & 3D Visual Card -->
     <section class="section hero-section" id="home">
+      <!-- Interactive AI Neural Network Canvas Background -->
+      <canvas id="neuralCanvas" class="neural-canvas" aria-hidden="true"></canvas>
+      
+      <!-- Ambient Glow Orbs -->
+      <div class="hero-glow-orb orb-1" aria-hidden="true"></div>
+      <div class="hero-glow-orb orb-2" aria-hidden="true"></div>
+
       <div class="container hero-container">
+        <!-- Hero Content (Left) -->
         <div class="hero-content">
           <div class="hero-badge">
             <span class="status-dot"></span>
-            <span>First-Year Computer Science Student</span>
+            <span>First-Year Computer Science Student &bull; AI/ML Track</span>
           </div>
-          <h1 class="hero-name">[YOUR NAME]</h1>
-          <h2 class="hero-title">B.Tech CSE | AI/ML Student</h2>
+
+          <h1 class="hero-name">
+            Aryan <span class="gradient-text">Bhati</span>
+          </h1>
+
+          <h2 class="hero-title">
+            <span class="title-focus">B.Tech CSE</span>
+            <span class="title-separator">|</span>
+            <span class="title-sub">Artificial Intelligence &amp; Machine Learning</span>
+          </h2>
+
           <p class="hero-description">
-            Passionate first-year Computer Science Engineering student specializing in Artificial Intelligence and Machine Learning. Focused on building strong foundations in data structures, algorithms, and computational mathematics to create intelligent, real-world solutions.
+            Passionate first-year Computer Science Engineering student specializing in Artificial Intelligence and Machine Learning. Focused on building rock-solid foundations in data structures, algorithms, and computational mathematics to engineer intelligent real-world systems.
           </p>
+
           <div class="hero-actions">
             <a href="#projects" class="btn btn-primary" id="hero-view-projects">
-              View Projects
+              <span>View Featured Projects</span>
               <svg class="btn-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                 <line x1="5" y1="12" x2="19" y2="12"></line>
                 <polyline points="12 5 19 12 12 19"></polyline>
               </svg>
             </a>
             <a href="#contact" class="btn btn-secondary" id="hero-contact-me">
-              Contact Me
+              <span>Contact Me</span>
               <svg class="btn-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                 <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
                 <polyline points="22,6 12,13 2,6"></polyline>
               </svg>
             </a>
           </div>
+
+          <!-- Hero Tech Pills Quick Overview -->
+          <div class="hero-tech-pills">
+            <span class="tech-pill"><span class="pill-dot pill-cyan"></span>Python &amp; ML</span>
+            <span class="tech-pill"><span class="pill-dot pill-indigo"></span>C++ &amp; DSA</span>
+            <span class="tech-pill"><span class="pill-dot pill-emerald"></span>Modern Web</span>
+            <span class="tech-pill"><span class="pill-dot pill-purple"></span>Algorithms</span>
+          </div>
         </div>
 
-        <div class="hero-highlights">
-          <div class="highlight-card">
-            <div class="highlight-icon">
-              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                <rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect>
-                <line x1="8" y1="21" x2="16" y2="21"></line>
-                <line x1="12" y1="17" x2="12" y2="17"></line>
-                <line x1="12" y1="17" x2="12" y2="21"></line>
-              </svg>
+        <!-- Hero Visual (Right): 3D Visual Card with Avatar & Floating Tech Chips -->
+        <div class="hero-visual-wrapper">
+          <div class="hero-avatar-card" id="heroAvatarCard">
+            <!-- Glass Frame & Image -->
+            <div class="avatar-glass-frame">
+              <img src="assets/images/hero-avatar.jpg" alt="Aryan Bhati - B.Tech CSE AI/ML Student" class="hero-avatar-image" width="480" height="480">
+              <div class="avatar-overlay-gradient"></div>
+              
+              <!-- Bottom Status Banner -->
+              <div class="avatar-status-beacon">
+                <span class="beacon-dot"></span>
+                <span>Active Learner &bull; Building &amp; Practicing</span>
+              </div>
             </div>
-            <div class="highlight-info">
-              <span class="highlight-label">Degree Track</span>
-              <strong class="highlight-value">B.Tech CSE (AI/ML)</strong>
+
+            <!-- Floating Tech Chips -->
+            <div class="floating-chip chip-top-left float-slow" aria-hidden="true">
+              <span class="chip-icon">🐍</span>
+              <div class="chip-text">
+                <strong>Python</strong>
+                <small>ML &amp; Scripting</small>
+              </div>
+            </div>
+
+            <div class="floating-chip chip-top-right float-reverse" aria-hidden="true">
+              <span class="chip-icon">⚡</span>
+              <div class="chip-text">
+                <strong>C++</strong>
+                <small>DSA &amp; OOP</small>
+              </div>
+            </div>
+
+            <div class="floating-chip chip-bottom-right float-normal" aria-hidden="true">
+              <span class="chip-icon">🤖</span>
+              <div class="chip-text">
+                <strong>AI &amp; Math</strong>
+                <small>Neural Nets</small>
+              </div>
             </div>
           </div>
 
-          <div class="highlight-card">
-            <div class="highlight-icon">
-              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                <polygon points="12 2 2 7 12 12 22 7 12 2"></polygon>
-                <polyline points="2 17 12 22 22 17"></polyline>
-                <polyline points="2 12 12 17 22 12"></polyline>
-              </svg>
+          <!-- Quick Highlight Cards -->
+          <div class="hero-highlights">
+            <div class="highlight-card">
+              <div class="highlight-icon">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect>
+                  <line x1="8" y1="21" x2="16" y2="21"></line>
+                  <line x1="12" y1="17" x2="12" y2="17"></line>
+                  <line x1="12" y1="17" x2="12" y2="21"></line>
+                </svg>
+              </div>
+              <div class="highlight-info">
+                <span class="highlight-label">Degree Track</span>
+                <strong class="highlight-value">B.Tech CSE (AI/ML)</strong>
+              </div>
             </div>
-            <div class="highlight-info">
-              <span class="highlight-label">Academic Standing</span>
-              <strong class="highlight-value">First Year Undergraduate</strong>
-            </div>
-          </div>
 
-          <div class="highlight-card">
-            <div class="highlight-icon">
-              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                <circle cx="12" cy="12" r="10"></circle>
-                <line x1="2" y1="12" x2="22" y2="12"></line>
-                <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path>
-              </svg>
+            <div class="highlight-card">
+              <div class="highlight-icon">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <polygon points="12 2 2 7 12 12 22 7 12 2"></polygon>
+                  <polyline points="2 17 12 22 22 17"></polyline>
+                  <polyline points="2 12 12 17 22 12"></polyline>
+                </svg>
+              </div>
+              <div class="highlight-info">
+                <span class="highlight-label">Academic Standing</span>
+                <strong class="highlight-value">First Year Undergrad</strong>
+              </div>
             </div>
-            <div class="highlight-info">
-              <span class="highlight-label">Primary Interest</span>
-              <strong class="highlight-value">AI, ML &amp; Algorithms</strong>
+
+            <div class="highlight-card">
+              <div class="highlight-icon">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <circle cx="12" cy="12" r="10"></circle>
+                  <line x1="2" y1="12" x2="22" y2="12"></line>
+                  <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path>
+                </svg>
+              </div>
+              <div class="highlight-info">
+                <span class="highlight-label">Primary Interest</span>
+                <strong class="highlight-value">AI, ML &amp; Algorithms</strong>
+              </div>
             </div>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- Section 2: About -->
+    <!-- Visual Stats Counter Strip -->
+    <section class="stats-section" aria-label="Key Academic Milestones">
+      <div class="container">
+        <div class="stats-grid">
+          <div class="stat-card">
+            <div class="stat-icon-wrapper">💻</div>
+            <div class="stat-content">
+              <div class="stat-number-wrap">
+                <span class="stat-number" data-target="500">0</span>
+                <span class="stat-suffix">+</span>
+              </div>
+              <span class="stat-label">Hours of Coding &amp; DSA</span>
+            </div>
+          </div>
+
+          <div class="stat-card">
+            <div class="stat-icon-wrapper">⚡</div>
+            <div class="stat-content">
+              <div class="stat-number-wrap">
+                <span class="stat-number" data-target="15">0</span>
+                <span class="stat-suffix">+</span>
+              </div>
+              <span class="stat-label">Core Algorithms Mastered</span>
+            </div>
+          </div>
+
+          <div class="stat-card">
+            <div class="stat-icon-wrapper">🚀</div>
+            <div class="stat-content">
+              <div class="stat-number-wrap">
+                <span class="stat-number" data-target="3">0</span>
+                <span class="stat-suffix">+</span>
+              </div>
+              <span class="stat-label">Academic Projects Built</span>
+            </div>
+          </div>
+
+          <div class="stat-card">
+            <div class="stat-icon-wrapper">🎯</div>
+            <div class="stat-content">
+              <div class="stat-number-wrap">
+                <span class="stat-highlight">1st Year</span>
+              </div>
+              <span class="stat-label">B.Tech CSE Specialization</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section 2: About with Developer Philosophy Terminal -->
     <section class="section" id="about">
       <div class="container">
         <div class="section-header">
@@ -128,49 +256,87 @@
         </div>
 
         <div class="about-grid">
-          <div class="about-narrative">
-            <h3 class="about-heading">Hello! I am a First-Year CSE Student</h3>
-            <p>
-              I am currently pursuing my Bachelor of Technology in Computer Science and Engineering with a focused specialization in Artificial Intelligence and Machine Learning.
-            </p>
-            <p>
-              My academic journey is centered on building robust fundamental skills. I spend my time learning modern programming techniques, analyzing data structures and algorithms (DSA), understanding the underlying mathematics of machine intelligence, and implementing clean code solutions.
-            </p>
-            <p>
-              I believe that becoming an impactful AI engineer starts with mastering the basics—writing efficient algorithms in C++, automating workflows with Python, and understanding how data translates into actionable decisions.
-            </p>
+          <!-- Left Column: Narrative & Philosophy Code Terminal -->
+          <div class="about-narrative-column">
+            <div class="about-narrative">
+              <h3 class="about-heading">Hello! I am a First-Year CSE Student</h3>
+              <p>
+                I am currently pursuing my Bachelor of Technology in Computer Science and Engineering with a focused specialization in Artificial Intelligence and Machine Learning.
+              </p>
+              <p>
+                My academic journey is centered on building robust fundamental skills. I spend my time learning modern programming techniques, analyzing data structures and algorithms (DSA), understanding the underlying mathematics of machine intelligence, and implementing clean code solutions.
+              </p>
+              <p>
+                I believe that becoming an impactful AI engineer starts with mastering the basics—writing efficient algorithms in C++, automating workflows with Python, and understanding how data translates into actionable decisions.
+              </p>
+            </div>
+
+            <!-- Sleek Developer Terminal Window -->
+            <div class="about-terminal" aria-label="Interactive Code Profile">
+              <div class="terminal-header">
+                <div class="terminal-dots">
+                  <span class="dot dot-red"></span>
+                  <span class="dot dot-yellow"></span>
+                  <span class="dot dot-green"></span>
+                </div>
+                <span class="terminal-filename">aryan_developer_profile.py</span>
+                <span class="terminal-badge">Python 3.14</span>
+              </div>
+              <pre class="terminal-body"><code><span class="token-keyword">class</span> <span class="token-class">StudentEngineer</span>:
+    <span class="token-keyword">def</span> <span class="token-func">__init__</span>(self):
+        self.name = <span class="token-string">"Aryan Bhati"</span>
+        self.track = <span class="token-string">"B.Tech CSE (AI/ML)"</span>
+        self.focus_areas = [<span class="token-string">"Machine Learning"</span>, <span class="token-string">"Data Structures"</span>, <span class="token-string">"Algorithms"</span>]
+        self.core_stack = [<span class="token-string">"Python"</span>, <span class="token-string">"C++"</span>, <span class="token-string">"HTML/CSS"</span>, <span class="token-string">"Git"</span>]
+
+    <span class="token-keyword">def</span> <span class="token-func">daily_routine</span>(self):
+        <span class="token-keyword">while</span> <span class="token-bool">True</span>:
+            self.solve_dsa_problems()
+            self.train_ml_models()
+            self.build_practical_apps()</code></pre>
+            </div>
           </div>
 
+          <!-- Right Column: Engineering Pillars -->
           <div class="about-pillars">
             <div class="pillar-card">
               <div class="pillar-header">
                 <span class="pillar-number">01</span>
-                <h4>Algorithmic Problem Solving</h4>
+                <div class="pillar-title-box">
+                  <h4>Algorithmic Problem Solving</h4>
+                  <span class="pillar-tag">C++ &amp; DSA</span>
+                </div>
               </div>
-              <p>Strengthening algorithmic thinking and problem-solving through disciplined DSA practice in C++ and Python.</p>
+              <p>Strengthening algorithmic thinking and computational complexity analysis through disciplined DSA problem-solving in C++ and Python.</p>
             </div>
 
             <div class="pillar-card">
               <div class="pillar-header">
                 <span class="pillar-number">02</span>
-                <h4>AI &amp; Machine Learning Focus</h4>
+                <div class="pillar-title-box">
+                  <h4>AI &amp; Machine Learning Focus</h4>
+                  <span class="pillar-tag">Machine Intelligence</span>
+                </div>
               </div>
-              <p>Studying foundational math, statistical inference, and machine learning models to build intelligent software.</p>
+              <p>Studying foundational computational math, linear algebra, statistical inference, and machine learning models to build intelligent software.</p>
             </div>
 
             <div class="pillar-card">
               <div class="pillar-header">
                 <span class="pillar-number">03</span>
-                <h4>Practical Engineering</h4>
+                <div class="pillar-title-box">
+                  <h4>Practical Engineering</h4>
+                  <span class="pillar-tag">Hands-on Apps</span>
+                </div>
               </div>
-              <p>Applying classroom concepts into hands-on student projects, Git version control, and web interfaces.</p>
+              <p>Applying classroom concepts into hands-on student projects, Git version control, interactive web applications, and collaborative coding.</p>
             </div>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- Section 3: Skills -->
+    <!-- Section 3: Skills with Category Filter & Proficiency Meters -->
     <section class="section" id="skills">
       <div class="container">
         <div class="section-header">
@@ -179,152 +345,234 @@
           <p class="section-subtitle">
             Core technologies, programming languages, and computational domains I am actively practicing.
           </p>
+
+          <!-- Interactive Filter Tabs -->
+          <div class="skills-filter-nav" role="tablist">
+            <button class="skill-filter-btn active" data-filter="all" role="tab" aria-selected="true">All Competencies</button>
+            <button class="skill-filter-btn" data-filter="languages" role="tab" aria-selected="false">Languages</button>
+            <button class="skill-filter-btn" data-filter="ai-ml" role="tab" aria-selected="false">AI &amp; ML</button>
+            <button class="skill-filter-btn" data-filter="cs-core" role="tab" aria-selected="false">CS Core</button>
+            <button class="skill-filter-btn" data-filter="tools" role="tab" aria-selected="false">Web &amp; Tools</button>
+          </div>
         </div>
 
-        <div class="skills-grid">
+        <div class="skills-grid" id="skillsGrid">
           <!-- Skill 1: Python -->
-          <div class="skill-card">
-            <div class="skill-icon-wrapper">
-              <svg class="skill-icon" viewBox="0 0 24 24" width="32" height="32" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                <path d="M12 2H8a4 4 0 0 0-4 4v3a3 3 0 0 0 3 3h5v2H6a4 4 0 0 0-4 4v2a2 2 0 0 0 2 2h4a4 4 0 0 0 4-4v-3a3 3 0 0 0-3-3H4"></path>
-                <circle cx="8" cy="6" r="1" fill="currentColor"></circle>
-                <circle cx="16" cy="18" r="1" fill="currentColor"></circle>
-              </svg>
+          <div class="skill-card" data-category="languages">
+            <div class="skill-card-top">
+              <div class="skill-icon-wrapper icon-python">
+                <svg class="skill-icon" viewBox="0 0 24 24" width="32" height="32" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M12 2H8a4 4 0 0 0-4 4v3a3 3 0 0 0 3 3h5v2H6a4 4 0 0 0-4 4v2a2 2 0 0 0 2 2h4a4 4 0 0 0 4-4v-3a3 3 0 0 0-3-3H4"></path>
+                  <circle cx="8" cy="6" r="1" fill="currentColor"></circle>
+                  <circle cx="16" cy="18" r="1" fill="currentColor"></circle>
+                </svg>
+              </div>
+              <span class="skill-level-badge badge-core">Core Language</span>
             </div>
+            
             <div class="skill-card-content">
               <div class="skill-title-row">
                 <h3 class="skill-name">Python</h3>
-                <span class="skill-badge">Core</span>
+                <span class="skill-pct-label">85%</span>
               </div>
-              <p class="skill-desc">Scripting, logic development, data manipulation, and building entry-level machine learning models.</p>
+              
+              <!-- Visual Progress Bar -->
+              <div class="skill-progress-track">
+                <div class="skill-progress-bar bar-python" style="--target-width: 85%;"></div>
+              </div>
+
+              <p class="skill-desc">Scripting, logic development, data manipulation, and building foundational machine learning models.</p>
             </div>
           </div>
 
           <!-- Skill 2: C++ -->
-          <div class="skill-card">
-            <div class="skill-icon-wrapper">
-              <svg class="skill-icon" viewBox="0 0 24 24" width="32" height="32" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                <polyline points="16 18 22 12 16 6"></polyline>
-                <polyline points="8 6 2 12 8 18"></polyline>
-                <line x1="12" y1="9" x2="12" y2="15"></line>
-                <line x1="9" y1="12" x2="15" y2="12"></line>
-              </svg>
+          <div class="skill-card" data-category="languages">
+            <div class="skill-card-top">
+              <div class="skill-icon-wrapper icon-cpp">
+                <svg class="skill-icon" viewBox="0 0 24 24" width="32" height="32" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <polyline points="16 18 22 12 16 6"></polyline>
+                  <polyline points="8 6 2 12 8 18"></polyline>
+                  <line x1="12" y1="9" x2="12" y2="15"></line>
+                  <line x1="9" y1="12" x2="15" y2="12"></line>
+                </svg>
+              </div>
+              <span class="skill-level-badge badge-core">Core Language</span>
             </div>
+
             <div class="skill-card-content">
               <div class="skill-title-row">
                 <h3 class="skill-name">C++</h3>
-                <span class="skill-badge">Core</span>
+                <span class="skill-pct-label">80%</span>
               </div>
-              <p class="skill-desc">Object-oriented programming, low-level memory management, and high-performance competitive coding.</p>
+              
+              <div class="skill-progress-track">
+                <div class="skill-progress-bar bar-cpp" style="--target-width: 80%;"></div>
+              </div>
+
+              <p class="skill-desc">Object-oriented programming, low-level memory concepts, and rigorous algorithmic problem solving.</p>
             </div>
           </div>
 
           <!-- Skill 3: Data Structures & Algorithms -->
-          <div class="skill-card">
-            <div class="skill-icon-wrapper">
-              <svg class="skill-icon" viewBox="0 0 24 24" width="32" height="32" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                <rect x="3" y="3" width="7" height="7"></rect>
-                <rect x="14" y="3" width="7" height="7"></rect>
-                <rect x="14" y="14" width="7" height="7"></rect>
-                <rect x="3" y="14" width="7" height="7"></rect>
-              </svg>
+          <div class="skill-card" data-category="cs-core">
+            <div class="skill-card-top">
+              <div class="skill-icon-wrapper icon-dsa">
+                <svg class="skill-icon" viewBox="0 0 24 24" width="32" height="32" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <rect x="3" y="3" width="7" height="7"></rect>
+                  <rect x="14" y="3" width="7" height="7"></rect>
+                  <rect x="14" y="14" width="7" height="7"></rect>
+                  <rect x="3" y="14" width="7" height="7"></rect>
+                </svg>
+              </div>
+              <span class="skill-level-badge badge-active">Active Focus</span>
             </div>
+
             <div class="skill-card-content">
               <div class="skill-title-row">
                 <h3 class="skill-name">Data Structures &amp; Algorithms</h3>
-                <span class="skill-badge">Active</span>
+                <span class="skill-pct-label">78%</span>
               </div>
-              <p class="skill-desc">Arrays, linked lists, stacks, queues, recursion, searching, sorting, and time/space complexity analysis.</p>
+              
+              <div class="skill-progress-track">
+                <div class="skill-progress-bar bar-dsa" style="--target-width: 78%;"></div>
+              </div>
+
+              <p class="skill-desc">Arrays, linked lists, stacks, queues, recursion, sorting, searching, and Big-O computational complexity.</p>
             </div>
           </div>
 
           <!-- Skill 4: Artificial Intelligence -->
-          <div class="skill-card">
-            <div class="skill-icon-wrapper">
-              <svg class="skill-icon" viewBox="0 0 24 24" width="32" height="32" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                <path d="M12 2a4 4 0 0 1 4 4v1a4 4 0 0 1-4 4 4 4 0 0 1-4-4V6a4 4 0 0 1 4-4z"></path>
-                <path d="M6 21v-2a4 4 0 0 1 4-4h4a4 4 0 0 1 4 4v2"></path>
-                <circle cx="12" cy="7" r="1"></circle>
-              </svg>
+          <div class="skill-card" data-category="ai-ml">
+            <div class="skill-card-top">
+              <div class="skill-icon-wrapper icon-ai">
+                <svg class="skill-icon" viewBox="0 0 24 24" width="32" height="32" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M12 2a4 4 0 0 1 4 4v1a4 4 0 0 1-4 4 4 4 0 0 1-4-4V6a4 4 0 0 1 4-4z"></path>
+                  <path d="M6 21v-2a4 4 0 0 1 4-4h4a4 4 0 0 1 4 4v2"></path>
+                  <circle cx="12" cy="7" r="1"></circle>
+                </svg>
+              </div>
+              <span class="skill-level-badge badge-specialization">Specialization</span>
             </div>
+
             <div class="skill-card-content">
               <div class="skill-title-row">
                 <h3 class="skill-name">Artificial Intelligence</h3>
-                <span class="skill-badge">Specialization</span>
+                <span class="skill-pct-label">75%</span>
               </div>
-              <p class="skill-desc">Foundations of intelligent agents, problem formulation, search algorithms, and computational logic.</p>
+              
+              <div class="skill-progress-track">
+                <div class="skill-progress-bar bar-ai" style="--target-width: 75%;"></div>
+              </div>
+
+              <p class="skill-desc">Foundations of intelligent agents, problem formulation, heuristic search, and knowledge representation.</p>
             </div>
           </div>
 
           <!-- Skill 5: Machine Learning -->
-          <div class="skill-card">
-            <div class="skill-icon-wrapper">
-              <svg class="skill-icon" viewBox="0 0 24 24" width="32" height="32" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                <circle cx="18" cy="5" r="3"></circle>
-                <circle cx="6" cy="12" r="3"></circle>
-                <circle cx="18" cy="19" r="3"></circle>
-                <line x1="8.59" y1="13.51" x2="15.42" y2="17.49"></line>
-                <line x1="15.41" y1="6.51" x2="8.59" y2="10.49"></line>
-              </svg>
+          <div class="skill-card" data-category="ai-ml">
+            <div class="skill-card-top">
+              <div class="skill-icon-wrapper icon-ml">
+                <svg class="skill-icon" viewBox="0 0 24 24" width="32" height="32" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <circle cx="18" cy="5" r="3"></circle>
+                  <circle cx="6" cy="12" r="3"></circle>
+                  <circle cx="18" cy="19" r="3"></circle>
+                  <line x1="8.59" y1="13.51" x2="15.42" y2="17.49"></line>
+                  <line x1="15.41" y1="6.51" x2="8.59" y2="10.49"></line>
+                </svg>
+              </div>
+              <span class="skill-level-badge badge-specialization">Specialization</span>
             </div>
+
             <div class="skill-card-content">
               <div class="skill-title-row">
                 <h3 class="skill-name">Machine Learning</h3>
-                <span class="skill-badge">Specialization</span>
+                <span class="skill-pct-label">72%</span>
               </div>
+              
+              <div class="skill-progress-track">
+                <div class="skill-progress-bar bar-ml" style="--target-width: 72%;"></div>
+              </div>
+
               <p class="skill-desc">Supervised and unsupervised learning basics, data pre-processing, linear regression, and classification.</p>
             </div>
           </div>
 
-          <!-- Skill 6: HTML -->
-          <div class="skill-card">
-            <div class="skill-icon-wrapper">
-              <svg class="skill-icon" viewBox="0 0 24 24" width="32" height="32" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                <polygon points="12 2 2 5 4 19 12 22 20 19 22 5 12 2"></polygon>
-                <path d="M12 6v12"></path>
-              </svg>
+          <!-- Skill 6: HTML5 -->
+          <div class="skill-card" data-category="tools">
+            <div class="skill-card-top">
+              <div class="skill-icon-wrapper icon-html">
+                <svg class="skill-icon" viewBox="0 0 24 24" width="32" height="32" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <polygon points="12 2 2 5 4 19 12 22 20 19 22 5 12 2"></polygon>
+                  <path d="M12 6v12"></path>
+                </svg>
+              </div>
+              <span class="skill-level-badge badge-proficient">Proficient</span>
             </div>
+
             <div class="skill-card-content">
               <div class="skill-title-row">
-                <h3 class="skill-name">HTML</h3>
-                <span class="skill-badge">Proficient</span>
+                <h3 class="skill-name">HTML5</h3>
+                <span class="skill-pct-label">90%</span>
               </div>
+              
+              <div class="skill-progress-track">
+                <div class="skill-progress-bar bar-html" style="--target-width: 90%;"></div>
+              </div>
+
               <p class="skill-desc">Modern semantic HTML5 structuring, accessible markup, document hierarchy, and SEO best practices.</p>
             </div>
           </div>
 
-          <!-- Skill 7: CSS -->
-          <div class="skill-card">
-            <div class="skill-icon-wrapper">
-              <svg class="skill-icon" viewBox="0 0 24 24" width="32" height="32" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                <path d="M4 3h16l-2 15-6 3-6-3L4 3z"></path>
-                <path d="M7.5 7h9M7.5 11h8M8 15h8"></path>
-              </svg>
+          <!-- Skill 7: CSS3 -->
+          <div class="skill-card" data-category="tools">
+            <div class="skill-card-top">
+              <div class="skill-icon-wrapper icon-css">
+                <svg class="skill-icon" viewBox="0 0 24 24" width="32" height="32" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M4 3h16l-2 15-6 3-6-3L4 3z"></path>
+                  <path d="M7.5 7h9M7.5 11h8M8 15h8"></path>
+                </svg>
+              </div>
+              <span class="skill-level-badge badge-proficient">Proficient</span>
             </div>
+
             <div class="skill-card-content">
               <div class="skill-title-row">
-                <h3 class="skill-name">CSS</h3>
-                <span class="skill-badge">Proficient</span>
+                <h3 class="skill-name">CSS3</h3>
+                <span class="skill-pct-label">88%</span>
               </div>
+              
+              <div class="skill-progress-track">
+                <div class="skill-progress-bar bar-css" style="--target-width: 88%;"></div>
+              </div>
+
               <p class="skill-desc">Responsive layouts with Flexbox and CSS Grid, custom properties, animations, and clean dark themes.</p>
             </div>
           </div>
 
           <!-- Skill 8: Git & GitHub -->
-          <div class="skill-card">
-            <div class="skill-icon-wrapper">
-              <svg class="skill-icon" viewBox="0 0 24 24" width="32" height="32" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                <circle cx="18" cy="18" r="3"></circle>
-                <circle cx="6" cy="6" r="3"></circle>
-                <path d="M13 6h3a2 2 0 0 1 2 2v7"></path>
-                <line x1="6" y1="9" x2="6" y2="21"></line>
-              </svg>
+          <div class="skill-card" data-category="tools">
+            <div class="skill-card-top">
+              <div class="skill-icon-wrapper icon-git">
+                <svg class="skill-icon" viewBox="0 0 24 24" width="32" height="32" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <circle cx="18" cy="18" r="3"></circle>
+                  <circle cx="6" cy="6" r="3"></circle>
+                  <path d="M13 6h3a2 2 0 0 1 2 2v7"></path>
+                  <line x1="6" y1="9" x2="6" y2="21"></line>
+                </svg>
+              </div>
+              <span class="skill-level-badge badge-core">Core Tool</span>
             </div>
+
             <div class="skill-card-content">
               <div class="skill-title-row">
                 <h3 class="skill-name">Git &amp; GitHub</h3>
-                <span class="skill-badge">Core Tool</span>
+                <span class="skill-pct-label">82%</span>
               </div>
+              
+              <div class="skill-progress-track">
+                <div class="skill-progress-bar bar-git" style="--target-width: 82%;"></div>
+              </div>
+
               <p class="skill-desc">Distributed version control, repository maintenance, branching, commits, and collaborative coding.</p>
             </div>
           </div>
@@ -332,97 +580,142 @@
       </div>
     </section>
 
-    <!-- Section 4: Projects -->
+    <!-- Section 4: Featured Projects with Rich Visual Mockups -->
     <section class="section" id="projects">
       <div class="container">
         <div class="section-header">
           <span class="section-tag">Featured Work</span>
           <h2 class="section-title">Academic &amp; Learning Projects</h2>
           <p class="section-subtitle">
-            Practical projects developed during coursework and self-guided learning.
+            Practical projects developed during coursework, self-guided learning, and algorithm exploration.
           </p>
         </div>
 
         <div class="projects-grid">
-          <!-- Project 1 -->
-          <article class="project-card">
-            <div class="project-header">
-              <span class="project-type">AI / NLP Concept</span>
-              <h3 class="project-title">AI Study Assistant</h3>
+          <!-- Project 1: AI Study Assistant -->
+          <article class="project-card" data-tilt>
+            <!-- Visual Mockup Image Frame -->
+            <div class="project-visual-frame">
+              <img src="assets/images/project-ai-study.jpg" alt="AI Study Assistant Mockup Interface" class="project-preview-img" loading="lazy" width="640" height="360">
+              <div class="project-overlay-glow"></div>
+              <span class="project-visual-badge">
+                <span class="badge-dot-live"></span>
+                AI / NLP Concept
+              </span>
             </div>
-            <p class="project-description">
-              An intelligent learning tool designed to assist college students by automatically summarizing lecture notes, parsing key concepts into flashcards, and generating quiz prompts based on syllabus topics.
-            </p>
-            <div class="project-tech">
-              <span class="tech-tag">Python</span>
-              <span class="tech-tag">Text Processing</span>
-              <span class="tech-tag">Algorithms</span>
-              <span class="tech-tag">CLI</span>
-            </div>
-            <div class="project-footer">
-              <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="btn-github" aria-label="View AI Study Assistant source code on GitHub">
-                <svg class="github-icon" viewBox="0 0 24 24" width="18" height="18" fill="currentColor">
-                  <path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/>
-                </svg>
-                <span>View on GitHub</span>
-              </a>
+
+            <div class="project-content-body">
+              <div class="project-header">
+                <span class="project-type">Intelligent Tool</span>
+                <h3 class="project-title">AI Study Assistant</h3>
+              </div>
+              
+              <p class="project-description">
+                An intelligent learning companion designed to assist college students by automatically summarizing lecture notes, parsing key concepts into flashcards, and generating interactive quiz prompts based on syllabus topics.
+              </p>
+
+              <div class="project-tech">
+                <span class="tech-tag"><span class="tag-dot"></span>Python</span>
+                <span class="tech-tag"><span class="tag-dot"></span>Text Processing</span>
+                <span class="tech-tag"><span class="tag-dot"></span>Algorithms</span>
+                <span class="tech-tag"><span class="tag-dot"></span>CLI</span>
+              </div>
+
+              <div class="project-footer">
+                <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="btn-github" aria-label="View AI Study Assistant source code on GitHub">
+                  <svg class="github-icon" viewBox="0 0 24 24" width="18" height="18" fill="currentColor">
+                    <path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/>
+                  </svg>
+                  <span>View Repository</span>
+                </a>
+              </div>
             </div>
           </article>
 
-          <!-- Project 2 -->
-          <article class="project-card">
-            <div class="project-header">
-              <span class="project-type">Web Application</span>
-              <h3 class="project-title">Student Productivity Dashboard</h3>
+          <!-- Project 2: Student Productivity Dashboard -->
+          <article class="project-card" data-tilt>
+            <!-- Visual Mockup Image Frame -->
+            <div class="project-visual-frame">
+              <img src="assets/images/project-productivity.jpg" alt="Student Productivity Dashboard Mockup" class="project-preview-img" loading="lazy" width="640" height="360">
+              <div class="project-overlay-glow"></div>
+              <span class="project-visual-badge">
+                <span class="badge-dot-live"></span>
+                Web Application
+              </span>
             </div>
-            <p class="project-description">
-              A distraction-free web dashboard built to track daily coding study streaks, manage assignment deadlines, organize course roadmaps, and maintain daily academic milestones with local data persistence.
-            </p>
-            <div class="project-tech">
-              <span class="tech-tag">HTML5</span>
-              <span class="tech-tag">CSS3</span>
-              <span class="tech-tag">Vanilla JavaScript</span>
-              <span class="tech-tag">LocalStorage</span>
-            </div>
-            <div class="project-footer">
-              <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="btn-github" aria-label="View Student Productivity Dashboard source code on GitHub">
-                <svg class="github-icon" viewBox="0 0 24 24" width="18" height="18" fill="currentColor">
-                  <path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/>
-                </svg>
-                <span>View on GitHub</span>
-              </a>
+
+            <div class="project-content-body">
+              <div class="project-header">
+                <span class="project-type">Frontend System</span>
+                <h3 class="project-title">Student Productivity Dashboard</h3>
+              </div>
+
+              <p class="project-description">
+                A distraction-free web dashboard built to track daily coding streaks, monitor assignment deadlines, organize semester roadmaps, and maintain daily academic milestones with browser local data persistence.
+              </p>
+
+              <div class="project-tech">
+                <span class="tech-tag"><span class="tag-dot"></span>HTML5</span>
+                <span class="tech-tag"><span class="tag-dot"></span>CSS3</span>
+                <span class="tech-tag"><span class="tag-dot"></span>Vanilla JS</span>
+                <span class="tech-tag"><span class="tag-dot"></span>LocalStorage</span>
+              </div>
+
+              <div class="project-footer">
+                <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="btn-github" aria-label="View Student Productivity Dashboard source code on GitHub">
+                  <svg class="github-icon" viewBox="0 0 24 24" width="18" height="18" fill="currentColor">
+                    <path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/>
+                  </svg>
+                  <span>View Repository</span>
+                </a>
+              </div>
             </div>
           </article>
 
-          <!-- Project 3 -->
-          <article class="project-card">
-            <div class="project-header">
-              <span class="project-type">Algorithm Repository</span>
-              <h3 class="project-title">Python Learning Projects</h3>
+          <!-- Project 3: Python Learning & Algorithms Repository -->
+          <article class="project-card" data-tilt>
+            <!-- Visual Mockup Image Frame -->
+            <div class="project-visual-frame">
+              <img src="assets/images/project-algorithms.jpg" alt="Python Algorithms & DSA Visualizer Mockup" class="project-preview-img" loading="lazy" width="640" height="360">
+              <div class="project-overlay-glow"></div>
+              <span class="project-visual-badge">
+                <span class="badge-dot-live"></span>
+                Algorithm Repository
+              </span>
             </div>
-            <p class="project-description">
-              A documented repository of modular Python programs exploring foundational concepts: classical sorting/searching algorithms, recursive puzzles, math computations, and automation scripts.
-            </p>
-            <div class="project-tech">
-              <span class="tech-tag">Python</span>
-              <span class="tech-tag">Algorithms</span>
-              <span class="tech-tag">Data Structures</span>
-              <span class="tech-tag">Git</span>
-            </div>
-            <div class="project-footer">
-              <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="btn-github" aria-label="View Python Learning Projects on GitHub">
-                <svg class="github-icon" viewBox="0 0 24 24" width="18" height="18" fill="currentColor">
-                  <path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/>
-                </svg>
-                <span>View on GitHub</span>
-              </a>
+
+            <div class="project-content-body">
+              <div class="project-header">
+                <span class="project-type">CS Fundamentals</span>
+                <h3 class="project-title">Python Learning &amp; DSA</h3>
+              </div>
+
+              <p class="project-description">
+                A documented repository of modular Python programs exploring foundational concepts: classical sorting/searching algorithms, recursive puzzles, math computations, and automation scripts.
+              </p>
+
+              <div class="project-tech">
+                <span class="tech-tag"><span class="tag-dot"></span>Python</span>
+                <span class="tech-tag"><span class="tag-dot"></span>Algorithms</span>
+                <span class="tech-tag"><span class="tag-dot"></span>Data Structures</span>
+                <span class="tech-tag"><span class="tag-dot"></span>Git</span>
+              </div>
+
+              <div class="project-footer">
+                <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="btn-github" aria-label="View Python Learning Projects on GitHub">
+                  <svg class="github-icon" viewBox="0 0 24 24" width="18" height="18" fill="currentColor">
+                    <path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/>
+                  </svg>
+                  <span>View Repository</span>
+                </a>
+              </div>
             </div>
           </article>
         </div>
       </div>
     </section>
 
-    <!-- Section 5: Learning Journey -->
+    <!-- Section 5: Learning Journey (Roadmap with Visual Step Milestones) -->
     <section class="section" id="journey">
       <div class="container">
         <div class="section-header">
@@ -434,27 +727,34 @@
         </div>
 
         <div class="timeline">
-          <!-- Step 1 -->
+          <!-- Step 1: Programming Fundamentals -->
           <div class="timeline-item completed">
             <div class="timeline-marker">
               <span class="marker-dot"></span>
+              <span class="marker-icon">💻</span>
             </div>
             <div class="timeline-content">
               <div class="timeline-badge-row">
                 <span class="step-num">Step 1</span>
-                <span class="timeline-status status-done">Completed</span>
+                <span class="timeline-status status-done">&#10003; Completed</span>
               </div>
               <h3 class="timeline-title">Programming Fundamentals</h3>
               <p class="timeline-desc">
                 Core computational concepts: variable types, conditionals, loops, functions, memory layout, and structured problem decomposition.
               </p>
+              <div class="timeline-tags">
+                <span class="t-tag">Syntax</span>
+                <span class="t-tag">Logic</span>
+                <span class="t-tag">Functions</span>
+              </div>
             </div>
           </div>
 
-          <!-- Step 2 -->
+          <!-- Step 2: Python & C++ -->
           <div class="timeline-item active">
             <div class="timeline-marker">
               <span class="marker-dot"></span>
+              <span class="marker-icon">⚡</span>
             </div>
             <div class="timeline-content">
               <div class="timeline-badge-row">
@@ -463,15 +763,21 @@
               </div>
               <h3 class="timeline-title">Python &amp; C++</h3>
               <p class="timeline-desc">
-                Object-oriented design, standard libraries, pointers, memory allocation, and writing idiomatic code in both languages.
+                Object-oriented design, standard template library (STL), pointers, memory allocation, and writing idiomatic code in both languages.
               </p>
+              <div class="timeline-tags">
+                <span class="t-tag">OOP</span>
+                <span class="t-tag">Memory Management</span>
+                <span class="t-tag">STL</span>
+              </div>
             </div>
           </div>
 
-          <!-- Step 3 -->
+          <!-- Step 3: DSA -->
           <div class="timeline-item active">
             <div class="timeline-marker">
               <span class="marker-dot"></span>
+              <span class="marker-icon">🌳</span>
             </div>
             <div class="timeline-content">
               <div class="timeline-badge-row">
@@ -482,13 +788,19 @@
               <p class="timeline-desc">
                 Arrays, linked lists, stacks, queues, binary trees, graph traversals, and algorithmic complexity (Big-O analysis).
               </p>
+              <div class="timeline-tags">
+                <span class="t-tag">Recursion</span>
+                <span class="t-tag">Trees &amp; Graphs</span>
+                <span class="t-tag">Complexity</span>
+              </div>
             </div>
           </div>
 
-          <!-- Step 4 -->
+          <!-- Step 4: Math for AI/ML -->
           <div class="timeline-item">
             <div class="timeline-marker">
               <span class="marker-dot"></span>
+              <span class="marker-icon">📐</span>
             </div>
             <div class="timeline-content">
               <div class="timeline-badge-row">
@@ -499,13 +811,19 @@
               <p class="timeline-desc">
                 Essential linear algebra (vectors, matrices, eigenvalues), multivariate calculus (gradients, optimization), and probability &amp; statistics.
               </p>
+              <div class="timeline-tags">
+                <span class="t-tag">Linear Algebra</span>
+                <span class="t-tag">Multivariate Calculus</span>
+                <span class="t-tag">Probability</span>
+              </div>
             </div>
           </div>
 
-          <!-- Step 5 -->
+          <!-- Step 5: Machine Learning -->
           <div class="timeline-item">
             <div class="timeline-marker">
               <span class="marker-dot"></span>
+              <span class="marker-icon">🤖</span>
             </div>
             <div class="timeline-content">
               <div class="timeline-badge-row">
@@ -516,13 +834,19 @@
               <p class="timeline-desc">
                 Supervised &amp; unsupervised learning paradigms, regression, classification trees, clustering, and feature engineering.
               </p>
+              <div class="timeline-tags">
+                <span class="t-tag">Scikit-Learn</span>
+                <span class="t-tag">Classification</span>
+                <span class="t-tag">Regression</span>
+              </div>
             </div>
           </div>
 
-          <!-- Step 6 -->
+          <!-- Step 6: Deep Learning -->
           <div class="timeline-item">
             <div class="timeline-marker">
               <span class="marker-dot"></span>
+              <span class="marker-icon">🧠</span>
             </div>
             <div class="timeline-content">
               <div class="timeline-badge-row">
@@ -533,13 +857,19 @@
               <p class="timeline-desc">
                 Artificial neural networks, backpropagation mechanics, activation functions, convolutional networks, and deep learning frameworks.
               </p>
+              <div class="timeline-tags">
+                <span class="t-tag">Neural Nets</span>
+                <span class="t-tag">PyTorch</span>
+                <span class="t-tag">CNNs</span>
+              </div>
             </div>
           </div>
 
-          <!-- Step 7 -->
+          <!-- Step 7: Generative AI -->
           <div class="timeline-item">
             <div class="timeline-marker">
               <span class="marker-dot"></span>
+              <span class="marker-icon">✨</span>
             </div>
             <div class="timeline-content">
               <div class="timeline-badge-row">
@@ -550,6 +880,11 @@
               <p class="timeline-desc">
                 Transformer architectures, attention mechanisms, Large Language Models (LLMs), prompt engineering, and intelligent agent systems.
               </p>
+              <div class="timeline-tags">
+                <span class="t-tag">Transformers</span>
+                <span class="t-tag">LLMs</span>
+                <span class="t-tag">AI Agents</span>
+              </div>
             </div>
           </div>
         </div>
@@ -739,8 +1074,8 @@
   <footer class="footer">
     <div class="container footer-container">
       <div class="footer-left">
-        <p class="footer-brand">[YOUR NAME] &bull; B.Tech CSE (AI/ML)</p>
-        <p class="footer-copyright">&copy; 2025 [YOUR NAME]. Built with pure HTML, CSS &amp; Vanilla JavaScript.</p>
+        <p class="footer-brand">Aryan Bhati &bull; B.Tech CSE (AI/ML)</p>
+        <p class="footer-copyright">&copy; 2025 Aryan Bhati. Built with pure HTML, CSS &amp; Vanilla JavaScript.</p>
       </div>
       <div class="footer-right">
         <a href="#home" class="back-to-top" id="backToTop" aria-label="Back to top of page">
